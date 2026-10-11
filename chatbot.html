@@ -1,29 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANGUNDE MAYUNGO</title>
+    <meta name="description", content="Nova est une assistance AI formée pour être sûre au quotidien.">
+    <title>Nova - Assistant de la bibliothèque</title>
 </head>
+
 <body>
-    <h1>Sangunde Mayungo</h1>
-    <img src="ai logo.jpg"
-    width="50" 
-    height="50" alt="AI Logo">
-    <p>Je suis <strong>Mayungo</strong>, <em>un etudiant de </em>Deep Learning & NLP</p>
-    <h2>Mes centre d'interet</h2>
-    <ul>
-        <li>Programming</li>
-        <li>Mathematics</li>
-        <li>Etudier les architecture des LLMs</li>
-    </ul>
-    <h2>Mes Objectif</h2>
-    <ol>
-        <li>Fine-tune LlaMA 7B en utilisant PEFT</li>
-        <li>creer un LLM from scratch</li>
-        <li>Trouver un stage</li>
-    </ol>
+    <!-- Nom des chatbot -->
+    <header>
+        <h1>Atlas</h1>
+        <img src="avatar.png" alt=""
+        height="80" width="80" >
+    </header>
+    
+    <main>
+        <!-- description du chatbot -->
+        <p>Votre intelligence structurée et pilier d'exécution</p>
+        <!-- les capabilites du chatbot -->
+        <section>    
+            <h2>Ce que je peux faire</h2>
+            <ul>
+                <li>Data Analysis </li>
+                <li>Mathematical Modeling</li>
+                <li>System Architecture</li>
+                <li>Code Engineering</li>
+            </ul>
+        </section>
+    <!-- les conversations -->
+        <section>
+            <h2>Conversations</h2>
+            <p><strong>Utilisateur: </strong>Mon code Python plante avec <em>IndexError: list index out of range.</em><br>
+            <strong>Atlas:</strong> Tu essaies d'accéder à un élément qui n'existe pas. Vérifie la taille de ta liste avec `len(ma_liste)` avant d'accéde. </p>
+
+            <p><strong>Utilisateur: </strong>C'est quoi un Overfitting en Machine Learning? <br>
+            <strong>Atlas :</strong>C'est quand ton modèle apprend par cœur les données d'entraînement au lieu de comprendre la logique. Il fait du 100% en test interne, mais échoue sur de nouvelles données.</p>
+
+            <p><strong>Utilisateur: </strong>Je veux créer une API web rapidement, je commence par quoi? <br>
+            <strong>Atlas: </strong> 
+            <ol>
+                <li>Choisis un framework léger (FastAPI ou Flask).</li>
+                <li>Définis tes routes (ex: users, item).</li>
+                <li>Connecte une base de données simple (SQLite).</li>
+            </ol>
+            </p>
+
+            <p><strong>Utilisateur: </strong>Donne-moi la requête pour trouver les clients ayant dépensé plus de 100€. <br>
+            <strong>Atlas: </strong> 
+            sql
+            SELECT client_id, SUM(montant) 
+            FROM commandes 
+            GROUP BY client_id 
+            HAVING SUM(montant) > 100;
+            </p>
+
+            <p><strong>Utilisateur: </strong>Comment accélérer une boucle `for` très lente en Python ? <br>
+            <strong>Atlas: </strong>Remplace la boucle par des opérations vectorisées avec la bibliothèque <em>NumPy</em>, ou utilise des listes en compréhension <em>(list comprehensions).</em></p> 
+
+            <p><strong>Utilisateur: </strong>Comment structurer les dossiers d'un projet Deep Learning? <br>
+            <strong> Atlas: </strong> 
+            <ol>
+                <li>data — Données brutes et nettoyées</li>
+                <li>models — Architectures et poids entraînés</li>
+                <li>sr — Scripts d'entraînement et d'évaluation</li>
+                <li>main.py — Point d'entrée du projet</li>
+            </ol>
+            </p>
+        </section>
+
+        <section>
+            <aside>
+            <table border="1">
+                <caption>Questions fréquentes</caption>
+                <thead>
+                    <tr>
+                        <th>Sujet</th>
+                        <th>Exemple de question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inscription</td>
+                        <td>Comment créer un compte ?</td>
+                    </tr>
+                    <tr>
+                        <td>Paiement</td>
+                        <td>Quels modes de paiement sont acceptés ?</td>
+                    </tr>
+                    <tr>
+                        <td>Livraison</td>
+                        <td>Quel est le délai de livraison ?</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td>Comment contacter le service client ?</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
     <hr>
-    <a href="https://huggingface.co/docs/transformers/en/model_doc/llama" target="_blank"> Hugging face</a>
+    <!-- disponibilite -->
+    </main>
+    <footer>Assistant disponible 24h/24</footer>
+
 </body>
-</html> 
+</html>
